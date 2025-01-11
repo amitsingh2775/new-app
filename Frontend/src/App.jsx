@@ -1,24 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Chat } from './component/chat.jsx'
-import { Login } from './component/login.jsx'
-import './App.css'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Login } from './components/Login';
+import { Register } from './components/Register';
+import { Chat } from './components/Chat';
 
 function App() {
   const [user, setUser] = useState(null);
+
   return (
-    <>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      {!user ? (
-        // Show Login if the user is not authenticated
-        <Login setUser={setUser} />
-      ) : (
-        // Show Chat if the user is logged in
-        <Chat user={user} />
-      )}
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={user ? <Navigate to="/chat" /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/login"
+          element={<Login setUser={setUser} />}
+        />
+        <Route
+          path="/register"
+          element={<Register setUser={setUser} />}
+        />
+        <Route
+          path="/chat"
+          element={user ? <Chat user={user} /> : <Navigate to="/login" />}
+        />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
