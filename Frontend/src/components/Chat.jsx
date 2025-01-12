@@ -12,7 +12,7 @@ export const Chat = ({ user }) => {
   //const [showProfilePopup, setShowProfilePopup] = useState(false);
 
   useEffect(() => {
-    const newSocket = io('https://chatapp-rnaocy3wq-amits-projects-9a022097.vercel.app');
+    const newSocket = io('https://new-app-backend-pbzzdrxhi-amits-projects-9a022097.vercel.app');
     setSocket(newSocket);
 
     newSocket.emit('join', user._id);
