@@ -20,7 +20,8 @@ Register Page->
 ![image](https://github.com/user-attachments/assets/75be2ca3-44e6-4b83-b31c-e51c9f094de7)
 
 Chat Room-> 
-![image](https://github.com/user-attachments/assets/b0045fd2-6dc1-4fa7-9116-01aa00ff30e1)
+![image](https://github.com/user-attachments/assets/f2a026ba-3a95-47f8-8c39-aa3a033a44e5)
+
 
 
 ## Note -> How to run the App
