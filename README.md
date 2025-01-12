@@ -20,7 +20,8 @@ Register Page->
 ![image](https://github.com/user-attachments/assets/75be2ca3-44e6-4b83-b31c-e51c9f094de7)
 
 Chat Room-> 
-![image](https://github.com/user-attachments/assets/f2a026ba-3a95-47f8-8c39-aa3a033a44e5)
+![image](https://github.com/user-attachments/assets/e03b1288-e7c1-4416-9248-c2221b0367a1)
+
 
 
 
