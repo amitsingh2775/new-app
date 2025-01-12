@@ -13,7 +13,7 @@ function App() {
       const token = localStorage.getItem('token');
       if (token) {
         try {
-          const res = await axios.post('https://chatapp-rnaocy3wq-amits-projects-9a022097.vercel.app/api/auth/verify-token', { token });
+          const res = await axios.post('https://new-app-backend-pbzzdrxhi-amits-projects-9a022097.vercel.app/api/auth/verify-token', { token });
           setUser(res.data.user);
         } catch (err) {
           localStorage.removeItem('token');
