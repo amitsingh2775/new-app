@@ -4,7 +4,7 @@ const Message = require('../models/Message');
 const socketConfig = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "*",
+      origin: "https://chatapp-frontend-8oceo4pqt-amits-projects-9a022097.vercel.app",
       methods: ["GET", "POST"],
     },
   });
